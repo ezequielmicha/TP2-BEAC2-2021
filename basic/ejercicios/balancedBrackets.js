@@ -27,6 +27,8 @@ const isValid = function(s){
     return true;
 };
 
+/// VOLEMOS 8: 18
+
 // TESTS
 console.log(isValid('()') === true);
 console.log(isValid('([{}])') === true);

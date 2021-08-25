@@ -31,4 +31,18 @@ printInventors(inventors
         }))
     .filter(inventor => inventor.year > 1800));
 
+// Buscar el inventor Kepler y retornar el objeto
+const inventorKepler = inventors.find(inventor => inventor.last === 'Kepler');
+console.log(inventorKepler);
+// Alguno de los inventores nacio en 1858
+inventors.some(inventor => inventor.year === 1858);
+// every
+// findIndex
+
+// Ordena los inventores por año
+printInventors(inventors.sort((a,b) => (a.year < b.year) ? 1: -1));
+
+// Ejercicio, revisar como funciona el .reduce
+
+
 
