@@ -25,3 +25,12 @@ let primerNombre = nombres.shift();
 
 nombres.indexOf('Elena');
 
+// Eliminar en una pocision determinada
+
+
+// realizar un copia del array
+
+
+
+
+

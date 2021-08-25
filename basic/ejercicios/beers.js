@@ -20,3 +20,20 @@ const beers = [
     { name: 'Stolen Fruit', abv: 4.6, label: 'https://s3.amazonaws.com/brewerydbapi/beer/YGT30k/upload_uVCHP7-large.png', type: 'Wheat' },
   ];
 
+console.log(beers.sort((beerA, beerB) => beerA.name < beerB.name ? 1: -1 ));
+console.log(beers.find(beer => beer.type == 'Wheat' ));
+
+
+const inventory = [
+  { type: "shirt", price: 4000 },
+  { type: "pants", price: 4532 },
+  { type: "socks", price: 234 },
+  { type: "shirt", price: 2343 },
+  { type: "pants", price: 2343 },
+  { type: "socks", price: 542 },
+  { type: "pants", price: 123 },
+];
+
+console.log(
+  inventory.reduce((acc, item) => acc + item.price,0)
+);

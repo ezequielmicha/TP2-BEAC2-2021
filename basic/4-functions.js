@@ -18,9 +18,19 @@ const getSum = (a,b) => {
     return a + b;
 }
 
-const getSum = (a,b) => a + b;
+//const getSum = (a,b) => a + b;
 // (paremeters) => {stataments};
 // parameter => {stataments};
 // parameter => statament;
 // parameter => { return expresion}
 
+//Hoisting
+
+console.log(doctorize2('wes'));
+const doctorize = function (firstName){
+    return `Dr. ${firstName}`;
+}
+
+function doctorize2 (firstNasme){
+    return `Dr. ${firstNasme}`;
+}

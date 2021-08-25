@@ -13,11 +13,23 @@
  * @param {string} s 
  * @return {boolean}
  */
-const isValid = function(s){    
+const isValid = function(s){ 
+    let aux = -1;
+    // ()
+    while (s.length !=0) {
+        aux = s.length;
+        s = s.replace("()","");
+        s = s.replace("[]","");
+        s = s.replace("{}","");
+        if(aux == s.length) return false;
+    }
+
+    return true;
 };
 
 // TESTS
 console.log(isValid('()') === true);
+console.log(isValid('([{}])') === true);
 console.log(isValid('()[]{}')=== true);
 console.log(isValid('(}') === false);
 console.log(isValid('([)]') === false);

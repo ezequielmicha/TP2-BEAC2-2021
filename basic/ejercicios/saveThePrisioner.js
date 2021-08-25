@@ -14,7 +14,8 @@
  * @param {Number} s el numero de silla por donde se empieza
  * @return el numero de prisionero que recibe la ultima golosina
  */
-const saveThePrisoner = function(n,m,s){   
+const saveThePrisoner = function(n,m,s){ 
+     
 }
 
 // TEST TDD
