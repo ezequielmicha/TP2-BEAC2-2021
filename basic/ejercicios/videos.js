@@ -41,14 +41,9 @@ function getVideos(str){
 }
 
 function getTotalSegundos(videos, tipo){
-  let totalSegundos = 0;
-    videos
+  return videos
     .filter(video => video.tipo === tipo)
-    .forEach(video => {
-        totalSegundos += video.min * 60 + video.seg;
-    });
-  /// se puede resolver con reduce! <- ejercicio
-    return totalSegundos;
+    .reduce((acc, video) => acc + video.min * 60 + video.seg, 0);    
 }
 
-console.log(getTotalSegundos(getVideos(str), "Flexbox Video"));
+console.log(getTotalSegundos(getVideos(str), "Redux Video"));
